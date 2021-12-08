@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.WebHost.UseUrls("https://0.0.0.0:443", "http://0.0.0.0:80");
+builder.WebHost.UseUrls("https://*:443", "http://*:80");
 
 var app = builder.Build();
 
