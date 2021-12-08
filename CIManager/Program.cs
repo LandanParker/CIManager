@@ -16,8 +16,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-new Class1().DoThing();
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
