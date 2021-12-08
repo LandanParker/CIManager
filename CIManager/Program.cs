@@ -1,3 +1,4 @@
+using DataMixer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,6 +15,8 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+new Class1().DoThing();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
